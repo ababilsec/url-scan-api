@@ -11,7 +11,7 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import punycode from 'punycode';
 import levenshtein from 'fast-levenshtein';
-import whois from 'whois-json';
+import whois from 'whois';
 
 // Configuration
 const PORT = process.env.PORT || 3000;
