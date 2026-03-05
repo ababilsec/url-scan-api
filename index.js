@@ -1,15 +1,17 @@
-require('dotenv').config();
-const express = require('express');
-const helmet = require('helmet');
-const rateLimit = require('express-rate-limit');
-const morgan = require('morgan');
-const dns = require('dns');
-const { URL } = require('url');
-const axios = require('axios');
-const cheerio = require('cheerio');
-const punycode = require('punycode');
-const levenshtein = require('fast-levenshtein');
-const whois = require('whois-json');
+import dotenv from 'dotenv';
+dotenv.config();
+
+import express from 'express';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
+import morgan from 'morgan';
+import dns from 'dns';
+import { URL } from 'url';
+import axios from 'axios';
+import * as cheerio from 'cheerio';
+import punycode from 'punycode';
+import levenshtein from 'fast-levenshtein';
+import whois from 'whois-json';
 
 // Configuration
 const PORT = process.env.PORT || 3000;
